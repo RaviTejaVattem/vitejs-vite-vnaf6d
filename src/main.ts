@@ -3,6 +3,7 @@ import typescriptLogo from './typescript.svg';
 import viteLogo from '/vite.svg';
 import { findKarmaTestsAndSuites } from './counter.ts';
 import { describeBlocks } from './parser.ts';
+import { simpleParser } from './simple-parser.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -22,5 +23,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `;
 
-console.log(describeBlocks);
+console.log(simpleParser());
 // console.log(findKarmaTestsAndSuites());
